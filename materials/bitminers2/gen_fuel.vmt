@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+"$basetexture" "bitminers2/gen_fuel_color"
+
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[0.2 0.2 0.2]"
+    "$envmapfresnel" "1"
+
+
+    "$bumpMap"                "bitminers2/gen_fuel_normal"
+    //"$normalmapalphaenvmapmask" "1"
+
+    "$surfaceprop" "Metal"
+    "$model" 1
+
+
+}
+
+

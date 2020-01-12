@@ -1,0 +1,29 @@
+"VertexLitGeneric"
+{
+"$basetexture" "bitminers2/bm2_misc_color"
+"$envmap" "env_cubemap"
+"$envmaptint" "[0.05 0.05 0.05]"
+"$envmapfresnel" "1"
+ 
+"$bumpMap""bitminers2/bm2_misc_normal"
+"$normalmapalphaenvmapmask" "1"
+
+"$surfaceprop" "metal"
+"$model" 1
+
+
+"$phong" "1"
+
+"$phongboost" "4"
+"$phongalbedotint" 25
+"$phongfresnelranges""[1 2 3]"
+"$halflambert" "1"
+
+// Rim lighting parameters
+"$rimlight" "1"// To enable rim lighting (requires phong)
+"$rimlightexponent" "4"// Exponent for phong component of rim lighting
+"$rimlightboost" "1"// Boost for ambient cube component of rim lighting
+"$rimmask" "1"                    // Use the alpha channel of the $phongexponenttexture as a rim mask.
+}
+
+

@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+"$basetexture" "bitminers2/bmr_feet_color"
+
+ 
+"$bumpMap""bitminers2/bmr_feet_normal"
+
+"$surfaceprop" "rubber"
+"$model" 1
+
+
+"$phong" "1"
+
+"$phongboost" "4"
+"$phongalbedotint" 25
+"$phongfresnelranges""[1 2 3]"
+"$halflambert" "1"
+
+// Rim lighting parameters
+"$rimlight" "1"// To enable rim lighting (requires phong)
+"$rimlightexponent" "4"// Exponent for phong component of rim lighting
+"$rimlightboost" "1"// Boost for ambient cube component of rim lighting
+"$rimmask" "1"                    // Use the alpha channel of the $phongexponenttexture as a rim mask.
+}
+
+
