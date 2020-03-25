@@ -1,10 +1,32 @@
+-- DONT TOUCH OR YOU WILL MESS UP API
+
+local BitcoinVal = nil
+-- CHANGE THIS TO CURRENCY SYMBOL (I.E USD, EUR)
+local CUR = USD
+
+http.Fetch("https://blockchain.info/ticker?currency=USD&value=1"
+	function( body, len, headers, code )
+		-- The first argument is the HTML we asked for.
+		
+		local response = util.JSONToTable(body);
+		local BitcoinVal = !response.CUR.15m.last
+		
+	end,
+	function( error )
+		print("Well... SHIT! Something went seriously wrong!")
+	end
+)
+
+
+
+
 BM2CONFIG = {}
 
 --Setting this to false will disable the generator from making sound.
 BM2CONFIG.GeneratorsProduceSound = true
 
 --Dollas a bitcoins sells for. Dont make this too large or it will be too easy to make money
-BM2CONFIG.BitcoinValue = 850
+BM2CONFIG.BitcoinValue = B
 
 --This is a value that when raising or lowering will effect the speed of all bitminers.
 --This is a balanced number and you should only change it if you know you need to. Small increments make big differences
