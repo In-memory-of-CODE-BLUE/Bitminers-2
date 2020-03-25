@@ -26,7 +26,7 @@ BM2CONFIG = {}
 BM2CONFIG.GeneratorsProduceSound = true
 
 --Dollas a bitcoins sells for. Dont make this too large or it will be too easy to make money
-BM2CONFIG.BitcoinValue = B
+BM2CONFIG.BitcoinValue = BitcoinVal
 
 --This is a value that when raising or lowering will effect the speed of all bitminers.
 --This is a balanced number and you should only change it if you know you need to. Small increments make big differences
