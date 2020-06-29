@@ -7,7 +7,7 @@ BM2CONFIG.GeneratorsProduceSound = true
 BM2CONFIG.BitcoinValue = 850
 
 -- Does you want to use Real Time Bitcoin Price API?
-BM2CONFIG.RealTimePrice = true
+BM2CONFIG.RealTimePrice = false
 
 --How many time to refresh the price?
 BM2CONFIG.RefreshRate = 15 -- (in minutes)
