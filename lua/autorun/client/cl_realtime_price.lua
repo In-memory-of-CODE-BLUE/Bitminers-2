@@ -29,7 +29,7 @@ end
 
 timer.Create("BM2REALTIMEAPI", BM2CONFIG.RefreshRate * 60, 0, function()
 
-    BM2CONFIG.RefreshPrice()
+    BM2CONFIG:RefreshPrice()
 
 end)
 
@@ -37,8 +37,13 @@ concommand.Add("bitcoins_refresh", function()
 
     if (BM2CONFIG.RealTimePrice) then
 
-        BM2CONFIG.RefreshPrice()
-        MsgC(Color(243, 156, 18), "[Bitcoins API]", color_white, " New Bitcoin Price : ", Color(243, 156, 18), (BM2CONFIG.BitcoinCurrency or "USD") .. " " .. (BM2CONFIG.BitcoinValue), color_white, " !")
+        BM2CONFIG:RefreshPrice()
+
+        timer.Simple(0.2, function()
+        
+            MsgC(Color(243, 156, 18), "[Bitcoins API]", color_white, " New Bitcoin Price : ", Color(243, 156, 18), (BM2CONFIG.BitcoinCurrency or "USD") .. " " .. (BM2CONFIG.BitcoinValue), color_white, " !")
+
+        end)
 
     else
 
