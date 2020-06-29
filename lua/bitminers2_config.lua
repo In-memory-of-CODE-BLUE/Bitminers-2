@@ -6,6 +6,16 @@ BM2CONFIG.GeneratorsProduceSound = true
 --Dollas a bitcoins sells for. Dont make this too large or it will be too easy to make money
 BM2CONFIG.BitcoinValue = 850
 
+-- Does you want to use Real Time Bitcoin Price API?
+BM2CONFIG.RealTimePrice = true
+
+--How many time to refresh the price?
+BM2CONFIG.RefreshRate = 15 -- (in minutes)
+
+--What currency you want to use?
+BM2CONFIG.BitcoinCurrency = "USD"
+--Availables : "USD", "AUD", "BRL", "CAD", "CHF", "CLP", "CNY", "DKK", "EUR", "GBP", "HKD", "INR", "ISK", "JPY", "KRW", "NZD", "PLN", "RUB", "SEK", "SGD", "THB", "TRY", "TWD"
+
 --This is a value that when raising or lowering will effect the speed of all bitminers.
 --This is a balanced number and you should only change it if you know you need to. Small increments make big differences
 BM2CONFIG.BaseSpeed = 0.005
